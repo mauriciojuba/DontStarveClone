@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: feda0c18015b3284cabbc0da85254f9a
+timeCreated: 1477973959
+licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: RobotBoyWalk00
@@ -31,7 +33,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -51,45 +53,56 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
+  allowsAlphaSplitting: 0
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 200
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings:
   - buildTarget: iPhone
     maxTextureSize: 1024
     textureFormat: -2
     compressionQuality: 100
+    allowsAlphaSplitting: 0
   - buildTarget: Android
     maxTextureSize: 1024
     textureFormat: -1
     compressionQuality: 50
+    allowsAlphaSplitting: 0
   - buildTarget: BlackBerry
     maxTextureSize: 1024
     textureFormat: -1
     compressionQuality: 50
+    allowsAlphaSplitting: 0
   - buildTarget: WP8
     maxTextureSize: 1024
     textureFormat: -1
     compressionQuality: 50
+    allowsAlphaSplitting: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: RobotBoyWalk00
+    - serializedVersion: 2
+      name: RobotBoyWalk00
       rect:
         serializedVersion: 2
         x: 0
         y: 1773
         width: 275
         height: 275
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk01
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk01
       rect:
         serializedVersion: 2
         x: 275
@@ -97,9 +110,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk02
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk02
       rect:
         serializedVersion: 2
         x: 550
@@ -107,9 +123,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk03
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk03
       rect:
         serializedVersion: 2
         x: 825
@@ -117,9 +136,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk04
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk04
       rect:
         serializedVersion: 2
         x: 1100
@@ -127,9 +149,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk05
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk05
       rect:
         serializedVersion: 2
         x: 1375
@@ -137,9 +162,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk06
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk06
       rect:
         serializedVersion: 2
         x: 1650
@@ -147,9 +175,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk07
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk07
       rect:
         serializedVersion: 2
         x: 0
@@ -157,9 +188,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk08
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk08
       rect:
         serializedVersion: 2
         x: 275
@@ -167,9 +201,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk09
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk09
       rect:
         serializedVersion: 2
         x: 550
@@ -177,9 +214,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk10
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk10
       rect:
         serializedVersion: 2
         x: 825
@@ -187,19 +227,25 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk11
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk11
       rect:
         serializedVersion: 2
         x: 1100
         y: 1498
         width: 275
         height: 275
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 6
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk12
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk12
       rect:
         serializedVersion: 2
         x: 1375
@@ -207,9 +253,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk13
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk13
       rect:
         serializedVersion: 2
         x: 1652
@@ -217,9 +266,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk14
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk14
       rect:
         serializedVersion: 2
         x: 0
@@ -227,9 +279,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: RobotBoyWalk15
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RobotBoyWalk15
       rect:
         serializedVersion: 2
         x: 275
@@ -237,8 +292,12 @@ TextureImporter:
         width: 275
         height: 275
       alignment: 0
-      pivot: {x: .5, y: .5}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
+  assetBundleVariant: 
