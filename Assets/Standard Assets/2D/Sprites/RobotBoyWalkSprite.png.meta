@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: feda0c18015b3284cabbc0da85254f9a
-timeCreated: 1477973959
+timeCreated: 1479773178
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -235,12 +235,12 @@ TextureImporter:
       name: RobotBoyWalk11
       rect:
         serializedVersion: 2
-        x: 1100
+        x: 1167
         y: 1498
-        width: 275
+        width: 136
         height: 275
-      alignment: 6
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1

@@ -20,5 +20,7 @@ public class InteractableObjects : MonoBehaviour {
 		
 	}
 	public virtual void Throw(){
+        this.transform.SetParent(null);
+        Destroy(this.GetComponent<FixedJoint2D>());
 	}
 }

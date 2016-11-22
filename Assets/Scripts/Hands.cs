@@ -27,16 +27,22 @@ public class Hands : MonoBehaviour {
 		if(Input.GetKey(KeyCode.Comma)){
 			l_count++;
 			if (l_count > 60f) {
-				Debug.Log ("joga fora");
-				//l_Obj.GetComponent<InteractableObjects> ().Throw ();
-				l_Obj = null;
-				if (canInteract) {
-					l_Obj = _objNear;
-					l_Obj.AddComponent<FixedJoint2D> ();
-					keepObjOnHand ();
-					l_Full = true;
-				}
-				l_count = 0f; 
+                if (l_Obj != null)
+                {
+                    l_Obj.GetComponent<Item>().Throw();
+                    l_Obj = null;
+                }
+                else
+                {
+                    if (canInteract)
+                    {
+                        l_Obj = _objNear;
+                        l_Obj.AddComponent<FixedJoint2D>();
+                        keepObjOn_L_Hand();
+                        l_Full = true;
+                    }
+                    l_count = 0f;
+                }
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.Comma)) {
@@ -48,16 +54,22 @@ public class Hands : MonoBehaviour {
 		if(Input.GetKey(KeyCode.Period)){
 			r_count++;
 			if (r_count > 60f) {
-				Debug.Log ("joga fora");
-				//r_Obj.GetComponent<InteractableObjects> ().Throw ();
-				r_Obj = null;
-				if (canInteract) {
-					r_Obj = _objNear;
-					r_Obj.AddComponent<FixedJoint2D> ();
-					keepObjOnHand ();
-					r_Full = true;
-				}
-				r_count = 0f; 
+                if (r_Obj != null)
+                {
+                    r_Obj.GetComponent<Item>().Throw();
+                    r_Obj = null;
+                }
+                else
+                {
+                    if (canInteract)
+                    {
+                        r_Obj = _objNear;
+                        r_Obj.AddComponent<FixedJoint2D>();
+                        keepObjOn_R_Hand();
+                        r_Full = true;
+                    }
+                    r_count = 0f;
+                }
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.Period)) {
@@ -65,21 +77,25 @@ public class Hands : MonoBehaviour {
 			r_Obj.GetComponent<Item> ().Use ();
 		}
 	}
-	void keepObjOnHand (){
+	void keepObjOn_R_Hand (){
 		if (r_Obj != null) {
-			_objNear.transform.SetParent (r_Hand);
+            _objNear.transform.SetParent (r_Hand);
 			r_Obj.GetComponent<FixedJoint2D> ().connectedBody = r_Hand.GetComponent<Rigidbody2D> ();
 			r_Obj.GetComponent<Depth> ().enabled = false;
 			r_Obj.transform.localPosition = Vector2.zero;
 		}
-		if (l_Obj != null) {
-			_objNear.transform.SetParent (l_Hand);
-			l_Obj.GetComponent<FixedJoint2D> ().connectedBody = l_Hand.GetComponent<Rigidbody2D> ();
-			l_Obj.GetComponent<Depth> ().enabled = false;
-			l_Obj.transform.localPosition = Vector2.zero;
-		}
 	}
-	void OnTriggerEnter2D(Collider2D hit){
+    void keepObjOn_L_Hand()
+    {
+        if (l_Obj != null)
+        {
+            _objNear.transform.SetParent(l_Hand);
+            l_Obj.GetComponent<FixedJoint2D>().connectedBody = l_Hand.GetComponent<Rigidbody2D>();
+            l_Obj.GetComponent<Depth>().enabled = false;
+            l_Obj.transform.localPosition = Vector2.zero;
+        }
+    }
+    void OnTriggerEnter2D(Collider2D hit){
 		if(hit.CompareTag("Interactable")){
 			Debug.Log("hit");
 			canInteract = true;
