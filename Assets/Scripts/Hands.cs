@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Hands : MonoBehaviour {
-
+	public GameObject playerHit;
 	GameObject r_Obj, l_Obj;
 	public Transform r_Hand, l_Hand;
 	public GameObject _objNear;
@@ -11,6 +11,7 @@ public class Hands : MonoBehaviour {
 
 
 	void Start () {
+		playerHit.SetActive(false);
 	}
 
 	void Update () {
@@ -22,9 +23,11 @@ public class Hands : MonoBehaviour {
 		getAndDiscartRightHand ();
 	}
 
-
+	void disableAttack(){
+		playerHit.SetActive(false);
+	}
 	void getAndDiscartLeftHand(){
-		if(Input.GetKey(KeyCode.Comma)){
+		if(Input.GetKey(KeyCode.Comma) ){
 			l_count++;
 			if (l_count > 60f) {
                 if (l_Obj != null)
@@ -45,9 +48,11 @@ public class Hands : MonoBehaviour {
                 }
 			}
 		}
-		if (Input.GetKeyUp (KeyCode.Comma)) {
+		if (Input.GetKeyUp (KeyCode.Comma)&&l_Full) {
 			l_count = 0;
 			l_Obj.GetComponent<Item> ().Use ();
+			playerHit.SetActive(true);
+			Invoke("disableAttack",0.5f);
 		}
 	}
 	void getAndDiscartRightHand(){
@@ -72,9 +77,11 @@ public class Hands : MonoBehaviour {
                 }
 			}
 		}
-		if (Input.GetKeyUp (KeyCode.Period)) {
+		if (Input.GetKeyUp (KeyCode.Period)&& r_Full) {
 			r_count = 0;
 			r_Obj.GetComponent<Item> ().Use ();
+			playerHit.SetActive(true);
+			Invoke("disableAttack",0.5f);
 		}
 	}
 	void keepObjOn_R_Hand (){
@@ -97,7 +104,6 @@ public class Hands : MonoBehaviour {
     }
     void OnTriggerEnter2D(Collider2D hit){
 		if(hit.CompareTag("Interactable")){
-			Debug.Log("hit");
 			canInteract = true;
 			_objNear = hit.gameObject;
 
@@ -109,12 +115,4 @@ public class Hands : MonoBehaviour {
 	}
 
 
-
-
-
-
-
-
-	void forDebugs(){
-	}
 }
